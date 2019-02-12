@@ -1,0 +1,66 @@
+.svg { 
+    position: absolute;
+}
+.polymorph  {
+    width: 100%;
+    fill:#006837;
+    
+}
+
+.splash {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.move-splash{
+    animation: slideOut 2s;
+    margin-left: -100%;
+    width: 0%;
+}
+.explore-button-container {
+    margin: 0 auto;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    box-shadow: .3em .1em 1em olivedrab;
+}
+
+.explore-button{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+.explore-button-container :hover {
+    cursor: pointer;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: -100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+@keyframes slideOut {
+    from{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    to{
+        margin-left: -100%;
+        width: 100%;
+    }
+}
+
